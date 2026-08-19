@@ -1,0 +1,49 @@
+# --- Dependencies -----------------------------------------------------------
+node_modules/
+.pnp
+.pnp.js
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Build output -----------------------------------------------------------
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# --- Secrets ----------------------------------------------------------------
+# This repository is public. The block-secrets hook is a backstop; this is the policy.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+.npmrc
+.netrc
+
+# --- Claude Code local state ------------------------------------------------
+# Shared config is committed on purpose. Only per-machine state is ignored.
+.claude/settings.local.json
+.claude/state/
+
+# --- Editors and OS ---------------------------------------------------------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs and scratch -------------------------------------------------------
+*.log
+npm-debug.log*
+coverage/
+.tmp/
+scratch/

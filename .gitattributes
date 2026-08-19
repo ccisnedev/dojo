@@ -1,0 +1,8 @@
+# Normalize line endings. This repo is public and cloned on Windows, macOS and Linux;
+# without this, the first commit from another OS shows every file as fully rewritten.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
